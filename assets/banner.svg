@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" role="img" aria-label="SpecGate">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b3d4a"/>
+      <stop offset="55%" stop-color="#146b73"/>
+      <stop offset="100%" stop-color="#1f8a6e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f4c95d"/>
+      <stop offset="100%" stop-color="#f28444"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="220" rx="18" fill="url(#bg)"/>
+  <circle cx="860" cy="40" r="70" fill="#f4c95d" opacity="0.12"/>
+  <circle cx="80" cy="190" r="90" fill="#7ee0c8" opacity="0.10"/>
+  <text x="48" y="92" fill="#f7f4ea" font-family="Georgia, Times New Roman, serif" font-size="58" font-weight="700">SpecGate</text>
+  <rect x="48" y="112" width="164" height="6" rx="3" fill="url(#accent)"/>
+  <text x="48" y="154" fill="#d7f3ec" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18">Specification-guided modular inference</text>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">
+    <rect x="48" y="174" width="52" height="24" rx="12" fill="#f4c95d"/>
+    <text x="74" y="191" text-anchor="middle" fill="#1b2a24">sep</text>
+    <rect x="108" y="174" width="86" height="24" rx="12" fill="#7ee0c8"/>
+    <text x="151" y="191" text-anchor="middle" fill="#12352e">bias_correct</text>
+    <rect x="202" y="174" width="52" height="24" rx="12" fill="#7eb8ff"/>
+    <text x="228" y="191" text-anchor="middle" fill="#10243d">mse</text>
+    <rect x="262" y="174" width="50" height="24" rx="12" fill="#f28444"/>
+    <text x="287" y="191" text-anchor="middle" fill="#2a1208">tta</text>
+    <rect x="320" y="174" width="58" height="24" rx="12" fill="#e8d5ff"/>
+    <text x="349" y="191" text-anchor="middle" fill="#2d1848">pamr</text>
+  </g>
+</svg>
