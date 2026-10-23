@@ -2,8 +2,24 @@
 
 import argparse
 import json
+import sys
 
 from specgate.registry import available_modules, download_modules, module_status
+
+_COLORS = {
+    "sep": "\033[38;5;220m",
+    "bias_correct": "\033[38;5;43m",
+    "mse": "\033[38;5;75m",
+    "tta": "\033[38;5;209m",
+    "pamr": "\033[38;5;183m",
+}
+_RESET = "\033[0m"
+
+
+def _paint(name):
+    if not sys.stdout.isatty():
+        return name
+    return f"{_COLORS.get(name, '')}{name}{_RESET}"
 
 
 def main(argv=None):
@@ -19,7 +35,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if args.cmd == "list":
         for name, desc in available_modules().items():
-            print(f"{name:14s} {desc}")
+            print(f"{_paint(name):s}{' ' * max(1, 14 - len(name))}{desc}")
         return 0
     if args.cmd == "status":
         print(json.dumps(module_status(), indent=2))
