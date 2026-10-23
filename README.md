@@ -1,6 +1,18 @@
-# SpecGate
+<p align="center">
+  <img src="assets/banner.svg" alt="SpecGate" width="100%">
+</p>
 
-Specification-guided modular inference for training-free open-vocabulary remote sensing segmentation.
+<p align="center">
+  <img src="https://img.shields.io/badge/status-under%20review-d97706?style=for-the-badge" alt="Under review">
+  <img src="https://img.shields.io/badge/python-3.9+-0f766e?style=for-the-badge" alt="Python">
+  <img src="https://img.shields.io/badge/license-MIT-1d4ed8?style=for-the-badge" alt="MIT">
+  <img src="https://img.shields.io/badge/modules-5-ea580c?style=for-the-badge" alt="5 modules">
+</p>
+
+<p align="center">
+  Specification-guided modular inference for training-free<br>
+  open-vocabulary remote sensing segmentation.
+</p>
 
 **Status: Under review.**
 
@@ -15,6 +27,14 @@ pip install -e .
 ```
 
 ## Modules
+
+<p>
+  <img src="https://img.shields.io/badge/sep-amber-f4c95d?style=flat-square&labelColor=1b2a24" alt="sep">
+  <img src="https://img.shields.io/badge/bias__correct-teal-14b8a6?style=flat-square&labelColor=12352e" alt="bias_correct">
+  <img src="https://img.shields.io/badge/mse-blue-3b82f6?style=flat-square&labelColor=10243d" alt="mse">
+  <img src="https://img.shields.io/badge/tta-coral-f28444?style=flat-square&labelColor=2a1208" alt="tta">
+  <img src="https://img.shields.io/badge/pamr-violet-c4b5fd?style=flat-square&labelColor=2d1848" alt="pamr">
+</p>
 
 | ID | Role |
 |---|---|
