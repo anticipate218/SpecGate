@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "specgate"
+version = "0.1.0"
+description = "Specification-guided modular inference for training-free open-vocabulary remote sensing segmentation"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+modules = ["torch"]
+
+[project.scripts]
+specgate = "specgate.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["specgate*"]
